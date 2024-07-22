@@ -1,0 +1,7 @@
+
+
+PRODUCER
+topic: test-elk
+{
+    "Nama": "joshua Ganteng"
+}
