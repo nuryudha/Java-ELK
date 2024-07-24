@@ -15,3 +15,18 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     template:
       default-topic: test-elk
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/datalake_elk
+    username: postgres
+    password: admin
+  
+  elasticsearch:
+    host: localhost
+    port: 9200
+    index: test_elk
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
