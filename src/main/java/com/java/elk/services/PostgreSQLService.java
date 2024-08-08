@@ -3,17 +3,17 @@ package com.java.elk.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.java.elk.entities.Message;
-import com.java.elk.repositories.MessageRepository;
+import com.java.elk.entities.DataLake;
+import com.java.elk.repositories.DataLakeRepository;
 
 @Service
 public class PostgreSQLService {
 
     @Autowired
-    private MessageRepository messageRepository;
+    private DataLakeRepository dataLakeRepository;
 
-    public void sendMessage(Message message) {
-        messageRepository.save(message);
+    public void saveDataLake(DataLake dataLake) {
+        dataLakeRepository.save(dataLake);
     }
 
 }
